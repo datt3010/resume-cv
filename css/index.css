@@ -1,5 +1,263 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 #app{
-    width: 800px;
-    height: 1200px;
-    background-color: aqua;
+    margin: auto;
+    width: 1300px;
+    height: 3000px;
+    /* background-color: aqua; */
+    position: relative;
+}
+#app .header{
+    width: 1300px;
+    height: 250px;
+    background-image: url("../images/header.png");
+    background-size: 1300px;
+}
+#app .header .img-profile{
+    width: 150px;
+    height: 150px;
+    background-image: url("../images/profile.jpg");
+    background-size:150px;
+    border-radius: 50%;
+    position: absolute;
+    top:150px;
+    left: 30px;
+}
+#app .header  .btn-success{
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    border-radius: 4px 4px 4px 4px;
+    top:190px;
+    right: 5px;
+}
+#app .main .name-profile{
+    font-size: 20px;
+    color: gray;
+    font-weight: bold;
+    padding-top:10px;
+    padding-left: 13rem;
+    line-height: 30px;
+}
+#app .main .description{
+    width: 900px;
+    height: 130px;
+    position: absolute;
+    margin-top: 40px;
+    left: 2rem;
+    background-color: gray;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 5px 5px 5px 5px darkgrey;
+}
+#app .main .description p{
+    color:black;
+    font-size: 20px;
+    line-height: 27px;
+    margin-left: 2px;
+}
+
+#app .main .description .title-summary{
+    position: absolute;
+    font-size: 30px;
+    left: 63rem;
+    margin-top: -90px;
+}
+
+#app .main .category-major{
+    margin-top: 240px;
+    width: 1200px;
+    height: 500px;
+    margin-left: 46px;
+    position: relative;
+}
+
+#app .main .category-major .back-end{
+    width: 300px;
+    height: 400px;
+    background-image: url("../images/image1.webp");
+    background-size: 300px;
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    float: left;
+    box-shadow: 5px 5px 5px 5px darkgrey;
+}
+
+#app .main .category-major .back-end .title-major{
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding-left: 20px;
+    padding-top: 230px;
+}
+
+#app .main .category-major .back-end .content-major{
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#app .main .category-major .database{
+    width: 300px;
+    height: 400px;
+    background-image: url("../images/image1.webp");
+    background-size: 300px;
+    position: absolute;
+    left: 450px;
+    top: 40px;
+    float: left;
+    box-shadow: 5px 5px 5px 5px darkgrey;
+}
+
+#app .main .category-major .database .title-major{
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding-left: 20px;
+    padding-top: 230px;
+}
+
+#app .main .category-major .database .content-major{
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#app .main .category-major .networking{
+    width: 300px;
+    height: 400px;
+    background-image: url("../images/image1.webp");
+    background-size: 300px;
+    position: absolute;
+    left: 880px;
+    top: 40px;
+    float: left;
+    box-shadow: 5px 5px 5px 5px darkgrey;
+}
+
+#app .main .category-major .networking .title-major{
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding-left: 20px;
+    padding-top: 230px;
+}
+
+#app .main .category-major .networking .content-major{
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#app .main .profile-personal{
+    width: 1300px;
+    height: 800px;
+}
+#app .main .profile-personal div{
+    float: left;
+}
+#app .main .profile-personal .image-personal{
+    width:650px;
+    height: 800px;
+    background-image: url("../images/profile.jpg");
+    background-repeat: no-repeat;
+    background-size: 650px;
+}
+#app .main .profile-personal .information-personal{
+    width: 650px;
+    height: 800px;
+}
+
+#app .main .profile-personal .information-personal .title-profile{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 199px;
+}
+
+#app .main .profile-personal .information-personal .panel-information{
+    width: 650px;
+    height: 554px;
+}
+
+#app .main .profile-personal .information-personal .panel-information .child-panel{
+    height: 70px;
+    width: 100%;
+}
+#app .main .profile-personal .information-personal .panel-information .child-panel .img-child img{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#app .main .profile-personal .information-personal .panel-information .child-panel .title-name{
+    margin-left: 3px;
+    color:black;
+    font-weight: bold;
+}
+
+#app .main .profile-personal .information-personal .panel-information .child-panel .fullname{
+    float: right;
+    color:black;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#app .main .profile-school{
+    width: 1300px;
+    height: 800px;
+}
+#app .main .profile-school .image-school {
+    float: right;
+}
+
+#app .main .profile-school .information-school{
+    float:right;
+    width: 650px;
+    height: 100%;
+}
+
+#app .main .profile-school .image-school{
+    width: 650px;
+    height: 800px;
+    background-image: url("../images/img-school.webp");
+    background-repeat: no-repeat;
+    background-size: 650px 800px;
+}
+
+
+
+#app .main .profile-school .information-school .title-profile{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 180px;
+    margin-right: 280px;
+}
+#app .main .profile-school .information-school .panel-information{
+    width: 650px;
+    height: 574px;
+}
+
+#app .main .profile-school .information-school .panel-information .child-panel{
+    height: 70px;
+    width: 100%;
+}
+#app .main .profile-school .information-school .panel-information .child-panel .img-child img{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#app .main .profile-school .information-school .panel-information .child-panel .title-name{
+    margin-left: 3px;
+    color:black;
+    font-weight: bold;
+}
+
+#app .main .profile-school .information-school .panel-information .child-panel .fullname{
+    float: right;
+    color:black;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 10px;
 }
