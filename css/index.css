@@ -6,6 +6,7 @@
     width: 1300px;
     height: 5000px;
     position: relative;
+    border: 1px solid black;
 }
 #app .header{
     width: 1300px;
@@ -74,7 +75,8 @@
 #app .main .category-major .back-end{
     width: 300px;
     height: 400px;
-    background-image: url("../images/image1.webp");
+    background-image: url("../images/anhdep.jpg");
+    background-repeat: no-repeat;
     background-size: 300px;
     position: absolute;
     left: 20px;
@@ -101,7 +103,8 @@
 #app .main .category-major .database{
     width: 300px;
     height: 400px;
-    background-image: url("../images/image1.webp");
+    background-image: url("../images/anhdep1.jpg");
+    background-repeat: no-repeat;
     background-size: 300px;
     position: absolute;
     left: 450px;
@@ -128,7 +131,8 @@
 #app .main .category-major .networking{
     width: 300px;
     height: 400px;
-    background-image: url("../images/image1.webp");
+    background-image: url("../images/anhdep3.jpg");
+    background-repeat: no-repeat;
     background-size: 300px;
     position: absolute;
     left: 880px;
