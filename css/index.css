@@ -1,4 +1,4 @@
-*{
+*{  margin: auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 #app{
@@ -46,22 +46,24 @@
     position: absolute;
     margin-top: 40px;
     left: 2rem;
-    background-color: gray;
+    background-color:rgba(0,0,0,.08);
     border-radius: 5px 5px 5px 5px;
     box-shadow: 5px 5px 5px 5px darkgrey;
 }
 #app .main .description p{
-    color:black;
+    color:#2c3e50;
     font-size: 20px;
     line-height: 27px;
     margin-left: 2px;
 }
 
 #app .main .description .title-summary{
+    width: 200px;
     position: absolute;
     font-size: 30px;
-    left: 63rem;
+    left: 60rem;
     margin-top: -90px;
+    text-align: center;
 }
 
 #app .main .category-major{
@@ -83,6 +85,11 @@
     top: 40px;
     float: left;
     box-shadow: 5px 5px 5px 5px darkgrey;
+    transition: transform 2s ease-in-out;
+}
+
+#app .main .category-major .back-end:hover{
+    transform: rotate(45deg);
 }
 
 #app .main .category-major .back-end .title-major{
@@ -105,12 +112,17 @@
     height: 400px;
     background-image: url("../images/anhdep1.jpg");
     background-repeat: no-repeat;
-    background-size: 300px;
+    background-size: 330px;
     position: absolute;
     left: 450px;
     top: 40px;
     float: left;
     box-shadow: 5px 5px 5px 5px darkgrey;
+    transition: transform 2s ease-in-out;
+}
+
+#app .main .category-major .database:hover{
+    transform: rotate(45deg);
 }
 
 #app .main .category-major .database .title-major{
@@ -139,6 +151,11 @@
     top: 40px;
     float: left;
     box-shadow: 5px 5px 5px 5px darkgrey;
+    transition: transform 2s ease-in-out;
+}
+
+#app .main .category-major .networking:hover{
+    transform: rotate(45deg);
 }
 
 #app .main .category-major .networking .title-major{
@@ -168,7 +185,7 @@
     height: 800px;
     background-image: url("../images/profile.jpg");
     background-repeat: no-repeat;
-    background-size: 650px;
+    background-size: 648px;
 }
 #app .main .profile-personal .information-personal{
     width: 650px;
@@ -227,7 +244,7 @@
     height: 800px;
     background-image: url("../images/img-school.webp");
     background-repeat: no-repeat;
-    background-size: 650px 800px;
+    background-size: 648px 800px;
 }
 
 
@@ -425,7 +442,7 @@ ul {
 #app .main .bar-skill .skill .skill-name{
     font-size: 20px;
     font-weight: 700;
-    color: black;
+    color: #2c3e50;
     text-transform: uppercase;
     padding-top: 20px;
     padding-left: 20px;
@@ -434,7 +451,7 @@ ul {
 #app .main .bar-skill .skill .skill-bar{
     width:800px;
     height: 14px;
-    background-color: gray;
+    background-color: rgba(0,0,0,.08);
     border-radius: 3px;
     margin-left: 20px;
 }
@@ -476,5 +493,30 @@ ul {
     }
     to{
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1500px){
+    #app .header article{
+        background-size: 100px;
+    }
+    #app .main .category-major .back-end, #app .main .category-major .database, #app .main .category-major .networking{
+        width: 220px;
+        background-size: 220px 200px; 
+    }
+    #app .main .category-major .back-end .content-major, #app .main .category-major .database .content-major, #app .main .category-major .networking .content-major{
+        font-size: 15px;
+    }
+
+    #app .main .description{
+        width: 800px;
+    }
+
+    #app .main .description p{
+        padding-top: 12px;
+        font-size: 12px;
+    }
+    #app .main .description .title-summary{
+        display: none;
     }
 }
