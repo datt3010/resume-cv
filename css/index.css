@@ -1,4 +1,4 @@
-*{  margin: auto;
+*{
     font-family: Arial, Helvetica, sans-serif;
 }
 #app{
@@ -483,7 +483,7 @@ ul {
     background: #f1f1f1;
     top: -20px;
     right: 0;
-    transform: translateX(50%) rotate(45deg);
+    transform: translateX(50%);
     border-radius: 2px;
 }
 
