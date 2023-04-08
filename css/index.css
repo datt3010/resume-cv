@@ -4,7 +4,7 @@
 #app{
     margin: auto;
     width: 1300px;
-    height: 5000px;
+    height: 6000px;
     position: relative;
     border: 1px solid black;
 }
@@ -400,4 +400,81 @@ ul {
 #app .footer span{
     color: white;
     font-weight: bold;
+}
+
+#app .main .bar-skill{
+    width: 1300px;
+    height: 800px;
+}
+
+#app .main .bar-skill .title-experience{
+    font-size: 30px;
+    font-weight: bold;
+    color:black;
+    line-height: 60px;
+    margin-left: 35rem;
+}
+
+#app .main .bar-skill .skill{
+    width: 900px;
+    height: 600px;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+#app .main .bar-skill .skill .skill-name{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#app .main .bar-skill .skill .skill-bar{
+    width:800px;
+    height: 14px;
+    background-color: gray;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+
+#app .main .bar-skill .skill .skill-per{
+    height: 14px;
+    background-color: blue;
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+#app .main .bar-skill .skill  ::before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top:-35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+#app .main .bar-skill .skill .skill-per::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillBars{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
 }
